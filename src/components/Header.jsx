@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import GymFluencerLogo from '../assets/gymfluencer.png';
+// import GymFluencerLogo from '../assets/gymfluencer.png';
 
 const Header = () => {
   useEffect(() => {
@@ -19,7 +19,7 @@ const Header = () => {
     >
       <img
         id="header-title-img"
-        src={GymFluencerLogo}
+        src="/assets/gymfluencer.png"
         alt="GymFluencer Logo"
       />
       <p
