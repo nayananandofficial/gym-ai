@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body{
+  font-family: 'Verdana', sans-serif;
+  scroll-behavior: smooth;
+  /* cursor: url('https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png') 30 30, auto; */
+}
+
+/* Home Page Section */
+/* Custom styling for Heading */
+
+/* Custom styling for navbar */
+
+
+/* ArrowButton */
+.button.style2.down.anchored{
+  background-image: url(assets/dark-arrow.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-color: white;
+  position: absolute;
+  border-radius: 50%;
+  height: 4.5em;
+  left: 48%;
+  bottom: 0;
+  color: white;
+  border: 2px solid white;
+  width: 4.5em;
+  text-indent: -10em;
+  overflow: hidden;
+}
+
+
+/* Workouts page */
+/* grid container */
+
+/* Main Card Styling */
+.main-card {
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+
+.main-card.expanded {
+  width: 90vw; /* Expand to 90% of the viewport width */
+  height: 80vh; /* Expand to 80% of the viewport height */
+  background-color: transparent;
+  color: #333;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+/* Title Styling */
+
+/* .main-title {
+  transition: opacity 0.1s ease;
+} */
+
+.main-card.expanded .main-title {
+  display: none; /* Hide the title when expanded */
+}
+
+/* Grid Container Styling */
+/* .grid-container {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  gap: 15px;
+} */
+
+
+/* show more button */
+
+/* .show-more-btn {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #ff6347;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.show-more-btn:hover {
+  background-color: #e55337;
+} */
+
+/* trainers carousel styling */
+.carousel-track{
+  animation: scroll 20s linear infinite;
+}
+
+.carousel-track:hover{
+  animation-play-state: paused;
+}
+
+@keyframes scroll{
+  from{
+    transform: translateX(0);
+  } 
+
+  to{
+    transform: translateX(-100%);
+  }
+}
+
+.carousel-item{
+  flex: 0 0 auto;
+}
+
+/* faq section */
+
+.faq.active::before,
+.faq.active::after {
+  content: '\f075';
+  font-family: 'Font Awesome 5 Free';
+  color: #2ecc71;
+  font-size: 7rem;
+  position: absolute;
+  opacity: 0.2;
+  top: 20px;
+  left: 20px;
+  z-index: 0;
+}
+
+.faq.active::before {
+  color: #3498db;
+  top: -10px;
+  left: -30px;
+  transform: rotateY(180deg);
+}
+
+.faq.active .faq-toggle .fa-times {
+  color: #fff;
+  display: block;
+}
+
+.faq.active .faq-toggle .fa-chevron-down {
+  display: none;
+}
+
+.faq.active .faq-toggle {
+  background-color: #9fa4a8;
+}
