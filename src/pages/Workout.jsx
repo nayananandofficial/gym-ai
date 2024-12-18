@@ -2,14 +2,19 @@ import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ArrowButton from "../components/ArrowButton";
+import StrengthBg from '../assets/strength-bg.png';
+import CardioBg from '../assets/cardio-bg.png';
+import YogaBg from '../assets/yoga-bg.png';
+import CrossfitBg from '../assets/crossfit-bg.png';
+import PilatesBg from '../assets/pilates-bg.png';
 
 const workoutItems = [
-  { title: "Strength Training", description: "Build strength with weights", bg: "url('src/assets/strength-bg.png" },
-  { title: "Cardio", description: "Improve endurance with HIIT", bg: "url('src/assets/cardio-bg.png')"},
-  { title: "Yoga", description: "Enhance flexibility and relax", bg: "url('src/assets/yoga-bg.png')"},
-  { title: "CrossFit", description: "Boost functional fitness", bg: "url('src/assets/crossfit-bg.png')"},
-  { title: "Pilates", description: "Boost functional fitness", bg: "url('src/assets/pilates-bg.png')"},
-  { title: "CrossFit", description: "Boost functional fitness", bg: "url('src/assets/crossfit-bg.png')"}
+  { title: "Strength Training", description: "Build strength with weights", bg: StrengthBg },
+  { title: "Cardio", description: "Improve endurance with HIIT", bg: CardioBg},
+  { title: "Yoga", description: "Enhance flexibility and relax", bg: YogaBg},
+  { title: "CrossFit", description: "Boost functional fitness", bg: CrossfitBg},
+  { title: "Pilates", description: "Boost functional fitness", bg: PilatesBg},
+  { title: "CrossFit", description: "Boost functional fitness", bg: CrossfitBg}
 ];
 
 export default function Workout(){
@@ -46,7 +51,7 @@ export default function Workout(){
             {workoutItems.map((item, index) => (
               <div key={index} className="grid-item bg-black text-white pt-10 text-center rounded-xl shadow-md transition-all duration-300 ease-in hover:scale-105"
               style={{
-                backgroundImage: item.bg,
+                backgroundImage: `url(${item.bg})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}

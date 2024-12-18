@@ -3,12 +3,16 @@ import { useNavigate } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ArrowButton from "../components/ArrowButton";
+import Trainer1 from '../assets/trainer-1.png';
+import Trainer2 from '../assets/trainer-2.png';
+import Trainer3 from '../assets/trainer-3.png';
+import Trainer4 from '../assets/trainer-4.png';
 
 const trainers = [
-  { id: 1, name: "Arnold Schwarzenegger", designation: "Strength Trainer", image: "trainer-1.png", link: "/trainer1" },
-  { id: 2, name: "Dwayne Johnson", designation: "Cardio Specialist", image: "trainer-2.png", link: "/trainer2" },
-  { id: 3, name: "Abu Salim", designation: "Personal Trainer", image: "trainer-3.png", link: "/trainer3" },
-  { id: 4, name: "Sanjana George", designation: "Crossfit Trainer", image: "trainer-4.png", link: "/trainer4" },
+  { id: 1, name: "Arnold Schwarzenegger", designation: "Strength Trainer", image: Trainer1, link: "/trainer1" },
+  { id: 2, name: "Dwayne Johnson", designation: "Cardio Specialist", image: Trainer2, link: "/trainer2" },
+  { id: 3, name: "Abu Salim", designation: "Personal Trainer", image: Trainer3, link: "/trainer3" },
+  { id: 4, name: "Sanjana George", designation: "Crossfit Trainer", image: Trainer4, link: "/trainer4" },
 ];
 
 export default function Trainers() {
@@ -45,7 +49,7 @@ export default function Trainers() {
                 className="carousel-item min-w-[300px] h-[300px] mx-4 cursor-pointer transition-transform transform hover:scale-105"
                 onClick={() => navigate(trainer.link)}>
                     <img 
-                      src={`src/assets/${trainer.image}`} 
+                      src={trainer.image} 
                       alt={trainer.name}
                       className="w-full h-full object-cover rounded-lg shadow-lg" />
                       {/* Hover Overlay */}
@@ -63,7 +67,7 @@ export default function Trainers() {
                 className="carousel-item min-w-[300px] h-[300px] mx-4 cursor-pointer transition-transform transform hover:scale-105"
                 onClick={() => navigate(trainer.link)}>
                     <img 
-                      src={`src/assets/${trainer.image}`} 
+                      src={trainer.image}
                       alt={trainer.name}
                       className="w-full h-full object-cover rounded-lg shadow-lg" />
                       {/* Hover Overlay */}
