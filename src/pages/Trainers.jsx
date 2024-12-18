@@ -45,7 +45,7 @@ export default function Trainers() {
                 className="carousel-item min-w-[300px] h-[300px] mx-4 cursor-pointer transition-transform transform hover:scale-105"
                 onClick={() => navigate(trainer.link)}>
                     <img 
-                      src={`src/assets/${trainer.image}`} 
+                      src={`./src/assets/${trainer.image}`} 
                       alt={trainer.name}
                       className="w-full h-full object-cover rounded-lg shadow-lg" />
                       {/* Hover Overlay */}
@@ -63,7 +63,7 @@ export default function Trainers() {
                 className="carousel-item min-w-[300px] h-[300px] mx-4 cursor-pointer transition-transform transform hover:scale-105"
                 onClick={() => navigate(trainer.link)}>
                     <img 
-                      src={`src/assets/${trainer.image}`} 
+                      src={`./src/assets/${trainer.image}`} 
                       alt={trainer.name}
                       className="w-full h-full object-cover rounded-lg shadow-lg" />
                       {/* Hover Overlay */}
