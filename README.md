@@ -1,5 +1,5 @@
 # GymFluencer - Modern Gym Website
-![Relative](/src/assets/website-model.png)
+![Relative](/assets/website-model.png)
 
 GymFluencer is a modern, responsive gym website designed to provide a seamless user experience. It features multiple sections, animations, and interactive components to showcase gym services, trainers, pricing plans, and more.
 
