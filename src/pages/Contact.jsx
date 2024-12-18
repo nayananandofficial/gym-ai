@@ -67,13 +67,13 @@ export default function Contact() {
               <p className="mt-2 text-gray-400">support@gymfluencer.com</p>
             </div>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white">
+              <a href="#" className="text-gray-400 hover:text-white hover:scale-110">
               <FontAwesomeIcon icon={faFacebook} className="text-blue-600 h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white">
+              <a href="#" className="text-gray-400 hover:text-white hover:scale-110">
               <FontAwesomeIcon icon={faXTwitter} className="text-white h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white">
+              <a href="#" className="text-gray-400 hover:text-white hover:scale-110">
               <FontAwesomeIcon icon={faInstagram} className="text-pink-500 h-6 w-6" />
               </a>
             </div>
