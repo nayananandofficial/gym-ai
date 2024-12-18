@@ -18,7 +18,7 @@ const About = () => {
       data-aos="zoom-in"
     >
       <img
-        src="./src/assets/about-bg.png"
+        src="./assets/about-bg.png"
         className="absolute top-auto left-auto h-full w-1/2 m-10 p-6 z-0"
         alt="a nice gym hall"
       />

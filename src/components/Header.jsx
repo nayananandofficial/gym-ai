@@ -18,7 +18,7 @@ const Header = () => {
     >
       <img
         id="header-title-img"
-        src="src/assets/GymFluencer.png"
+        src="./assets/gymfluencer.png"
         alt="GymFluencer Logo"
       />
       <p
